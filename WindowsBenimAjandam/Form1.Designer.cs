@@ -49,7 +49,6 @@ namespace WindowsBenimAjandam
             this.panel.Controls.Add(this.lbl_Tarih);
             this.panel.Controls.Add(this.btn_TariheGit);
             this.panel.Controls.Add(this.btn_Önceki);
-            this.panel.Controls.Add(this.NotlarımıGösterLayout);
             this.panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
@@ -94,6 +93,7 @@ namespace WindowsBenimAjandam
             this.btn_TariheGit.TabIndex = 2;
             this.btn_TariheGit.Text = "Tarihe Git";
             this.btn_TariheGit.UseVisualStyleBackColor = true;
+            this.btn_TariheGit.Click += new System.EventHandler(this.btn_TariheGit_Click);
             // 
             // btn_Önceki
             // 
@@ -107,9 +107,11 @@ namespace WindowsBenimAjandam
             // 
             // NotlarımıGösterLayout
             // 
-            this.NotlarımıGösterLayout.Location = new System.Drawing.Point(0, 0);
+            this.NotlarımıGösterLayout.AutoScroll = true;
+            this.NotlarımıGösterLayout.Dock = System.Windows.Forms.DockStyle.Right;
+            this.NotlarımıGösterLayout.Location = new System.Drawing.Point(290, 0);
             this.NotlarımıGösterLayout.Name = "NotlarımıGösterLayout";
-            this.NotlarımıGösterLayout.Size = new System.Drawing.Size(292, 450);
+            this.NotlarımıGösterLayout.Size = new System.Drawing.Size(510, 450);
             this.NotlarımıGösterLayout.TabIndex = 1;
             // 
             // timer1
@@ -123,6 +125,7 @@ namespace WindowsBenimAjandam
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel);
+            this.Controls.Add(this.NotlarımıGösterLayout);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AnaForm";

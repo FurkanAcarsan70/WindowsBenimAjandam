@@ -65,5 +65,16 @@ namespace WindowsBenimAjandam
             lbl_Tarih.Text = Convert.ToDateTime(lbl_Tarih.Text).AddDays(-1).ToString("dd.MM.yyyy");
             NotlarıGetir();
         }
+
+        private void btn_TariheGit_Click(object sender, EventArgs e)
+        {
+            TariheGit Trhgit = new TariheGit();
+            Trhgit.ShowDialog();
+            if (Trhgit.Devam == 1)
+            {
+                lbl_Tarih.Text = Trhgit.Tarih.ToString("dd.MM.yyyy");
+                NotlarıGetir();
+            }
+        }
     }
 }

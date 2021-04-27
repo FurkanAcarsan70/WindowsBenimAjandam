@@ -76,7 +76,7 @@ namespace WindowsBenimAjandam
 
         private void btn_Sil_Click(object sender, EventArgs e)
         {
-            Cls.SQLConnectionClass.Command("DELETE FROM [dbo].[Not]   WHERE not_KayıtNo = " + Convert.ToInt32(txt_KayıtNumarası.Text) + " ");
+            Cls.SQLConnectionClass.Command("DELETE FROM [dbo].[NOT]   WHERE not_KayıtNo = " + Convert.ToInt32(txt_KayıtNumarası.Text) + " ");
             if (Cls.SQLConnectionClass.SQLexception == null)
             {
                 MessageBox.Show("Silme Başarılı.");

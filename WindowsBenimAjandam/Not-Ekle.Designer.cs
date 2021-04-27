@@ -79,6 +79,7 @@ namespace WindowsBenimAjandam
             this.txt_KayıtNumarası.Name = "txt_KayıtNumarası";
             this.txt_KayıtNumarası.Size = new System.Drawing.Size(100, 23);
             this.txt_KayıtNumarası.TabIndex = 3;
+            this.txt_KayıtNumarası.Text = "0";
             // 
             // txt_Başlık
             // 
@@ -176,13 +177,13 @@ namespace WindowsBenimAjandam
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_Başlık;
         private System.Windows.Forms.Button btn_Kaydet;
         private System.Windows.Forms.Button btn_Sil;
-        private System.Windows.Forms.TextBox txt_İçerik;
         private System.Windows.Forms.Button btn_Çıkış;
         public System.Windows.Forms.TextBox txt_KayıtNumarası;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTarihBulucu;
+        public System.Windows.Forms.TextBox txt_Başlık;
+        public System.Windows.Forms.TextBox txt_İçerik;
     }
 }
